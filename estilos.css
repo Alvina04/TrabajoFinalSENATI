@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body{
+    background-color: #edf0f1;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+}
+
+/* Inicio header */
+.header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a img{
+    height: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #5884a3;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+nav a:hover{
+    color: black;
+}
+/* Termino Header */
+
+/* Inicio Nosotros */
+#nosotrosContenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: medium;
+    text-align: justify;
+}
+
+
+#nosotros{
+    width: 450px;
+    width: 96%;
+    max-width: 80vw;
+}
+#contenedorIMGNosotros{
+    margin-left: 40px;
+}
+
+h2{
+    text-align: center;
+}
+/* Termino Nosotros */
+
+
+
+/* Inicio Banner */
+#banner{
+    margin: 0 20px;
+}
+#banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Termino Banner */
+
+/* Inicio Carreras */
+#carrerasContenedor img{
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+#carrerasContenedor .contenedor{
+    display: flex;
+    margin: 20px;
+    text-align: justify;
+
+}
+#carrerasContenedor{
+    justify-content: center;
+    align-items: center;
+}
+#carrerasContenedor div{
+    padding: 20px;
+    width: auto;
+
+}
+.carreraIMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Termino Carreras */
+
+/* Inicio Footer */
+.footer{
+    background-color: #2b3e50;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px; 
+}
+
+#footerIzquierdo{
+    display: flex;
+    flex-direction: column;
+}
+#footerDerecho p{
+    margin: 0px;
+}
+
+#footerIzquierdo a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#footerDerecho a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* Termino footer */
+
+/* Inicio Responsivo */
+    @media screen and (max-width:650px) {
+        #nosotrosContenedor{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+
+        }
+        #nosotrosContenedor img{
+            width: 50%;
+        }
+
+        #contenedorIMGNosotros{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #carrerasContenedor .contenedor{
+            flex-direction: column;
+        }
+
+        #carrerasContenedor{
+            
+            width: 100%;
+            max-width: none;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+
+        #footerDerecho,
+        #footerIzquierdo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #carrerasContenedor div{
+            max-width: 80vw;
+        }
+    }
+/* Fin Responsivo */
